@@ -1,0 +1,26 @@
+# ImageSizeGenerator
+#
+# Release 0.01 (Nov 11, 2009)
+# Release 0.02 (Nov 18, 2009) fix doc link.
+# Release 0.03 (Nov 23, 2009) YAML and check exist image.
+# Release 0.04 (Nov 30, 2009) fix bug.
+# Release 1.00 (Dec 04, 2009) corresponded to two or more img elements in one line.
+# Release 1.01 (Aug 15, 2010) delete L10N folder.
+#
+# Copyright (c) 2004-2010 Yujiro Araki
+
+name: ImageSizeGenerator
+id: ImageSizeGenerator
+author_link: http://www.koikikukan.com/
+author_name: Yujiro Araki
+plugin_link: http://www.koikikukan.com/archives/2009/11/11-000300.php
+doc_link: http://www.koikikukan.com/archives/2009/11/11-000300.php
+description: <__trans phrase="This is Movable Type plugin for generating width and height attribute of img element.">
+version: 1.00
+l10n_lexicon:
+    ja:
+        This is Movable Type plugin for generating width and height attribute of img element.: 記事本文中のimg要素にwidth属性とheight属性を追加します
+applications:
+    cms:
+        callbacks:
+            cms_pre_save.entry: $ImageSizeGenerator::ImageSizeGenerator::CMS::pre_save
